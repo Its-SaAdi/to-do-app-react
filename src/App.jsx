@@ -51,8 +51,8 @@ function App() {
 
   return (
     <TodoProvider value={{todos, addTodo, updateTodo, deleteTodo, toggleComplete, clearTodo}}>
-      <div className="bg-[#172842] min-h-screen py-8">
-          <div className="w-full max-w-2xl mx-auto shadow-lg rounded-xl px-4 py-3 text-white">
+      <div className="bg-gradient-to-tr from-teal-200 via-fuchsia-300 to-sky-300 min-h-screen py-8 px-4">
+          <div className="w-full max-w-2xl mx-auto shadow-lg rounded-xl px-4 py-3 bg-white/15">
               <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todo's</h1>
               <div className="mb-4">
                   <TodoForm />
@@ -67,7 +67,7 @@ function App() {
                   }
               </div>
               <div className="w-full flex justify-end items-center gap-3 text-sm">
-                <button className="bg-red-600 hover:bg-red-500 font-semibold px-3 py-1 rounded-lg"
+                <button className="bg-red-600 text-white hover:bg-red-500 font-semibold px-3 py-1 rounded-lg"
                   onClick={clearTodo}
                 >
                   Clear All
